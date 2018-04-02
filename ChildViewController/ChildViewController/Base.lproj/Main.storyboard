@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKL-kz-mcD">
+                                <rect key="frame" x="20" y="277" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PKL-kz-mcD" secondAttribute="height" multiplier="67:6" id="nlH-6f-h5e"/>
+                                </constraints>
+                                <state key="normal" title="Mark"/>
+                                <connections>
+                                    <action selector="markButtonClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="SeQ-FS-lOI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuO-PG-L3b">
+                                <rect key="frame" x="20" y="380" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Model"/>
+                                <connections>
+                                    <action selector="modelButtonClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="4zm-08-MYY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nuO-PG-L3b" firstAttribute="height" secondItem="PKL-kz-mcD" secondAttribute="height" id="CC4-i6-0Mr"/>
+                            <constraint firstItem="PKL-kz-mcD" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.85" id="Ki5-EJ-xOg"/>
+                            <constraint firstItem="PKL-kz-mcD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RAz-69-yaC"/>
+                            <constraint firstItem="nuO-PG-L3b" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.15" id="W7E-A5-ISd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PKL-kz-mcD" secondAttribute="trailing" id="jvm-vU-Ybd"/>
+                            <constraint firstItem="PKL-kz-mcD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="l87-AQ-lpY"/>
+                            <constraint firstItem="nuO-PG-L3b" firstAttribute="width" secondItem="PKL-kz-mcD" secondAttribute="width" id="mTX-xl-g99"/>
+                            <constraint firstItem="nuO-PG-L3b" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xiH-z2-7lF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="markButton" destination="PKL-kz-mcD" id="iQf-vN-YIJ"/>
+                        <outlet property="modelButton" destination="nuO-PG-L3b" id="CrM-lO-xW0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
